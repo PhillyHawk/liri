@@ -4,7 +4,7 @@ var moment= require("moment");
 var keys = require("./keys.js");
 var Spotify =require("node-spotify-api");
 var spotify = new Spotify(keys.spotify);
-
+//bands in town
 function getBands(artist){
   var queryUrl= "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
@@ -21,7 +21,7 @@ axios.get(queryUrl).then(function(response){
   }
 
 })
-  
+ //spotify 
   
 };
 getBands("Ariana Grande");
