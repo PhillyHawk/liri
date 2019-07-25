@@ -30,12 +30,28 @@ axios.get(queryUrl).then(function(response){
 getBands("Madonna");
 
 //spotify//
-spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
+spotify.search({ type: 'track', query: '1979' }, function(err, data) {
   if (err) {
     return console.log('Error occurred: ' + err);
   }
  
 console.log(data); 
-});
+
+var song = data.tracks.items[0];
+    console.log("------Artists-----");
+    for(i=0; i<song.artists.length; i++){
+    	console.log(song.artists[i].name);
+    }
+
+    console.log("------Song Name-----");
+    console.log(song.name);
+
+	console.log("-------Preview Link-----");
+    console.log(song.preview_url);
+
+    console.log("-------Album-----");
+    console.log(song.album.name);
+
+	});
 
 
