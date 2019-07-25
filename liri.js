@@ -3,7 +3,7 @@ var axios= require("axios");
 var moment= require("moment");
 var keys = require("./keys.js");
 var Spotify =require("node-spotify-api");
-var Spotify = new Spotify(keys.spotify);
+var spotify = new Spotify(keys.spotify);
 
 
 
