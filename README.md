@@ -39,3 +39,6 @@ This will output the following information to your terminal/bash window:
 Step Four: node liri.js do-what-it-says
 
 This will output the command placed in random.txt file
+
+## See the coding here: 
+https://drive.google.com/file/d/1RYBGPf3NwtqN98HGZsHmNT7X_q-bcVlG/view
